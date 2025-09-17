@@ -1,102 +1,197 @@
-<section id="projects">
-  <h2>Projects & Civic Impact</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Ifeanyi Emmanuel Okafor</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Sidebar styles */
+    #project-nav {
+      position: fixed;
+      top: 100px;
+      left: 0;
+      width: 220px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      overflow-y: auto;
+    }
+    #project-nav ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    #project-nav li {
+      margin-bottom: 10px;
+    }
+    #project-nav a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    #project-nav a:hover {
+      color: #005fa3;
+    }
 
-  <div class="project-card" id="umuigbo">
-    <h3>Umuigbo Project</h3>
-    <p>Digitizing the Igbo Apprenticeship system to preserve indigenous knowledge and scale economic empowerment.</p>
-    <ul>
-      <li><strong>Theme:</strong> Cultural Tech, Skills Transfer</li>
-      <li><strong>Impact:</strong> Increased participation by 25%</li>
-    </ul>
-  </div>
+    /* Main content margin */
+    #projects {
+      margin-left: 240px;
+      padding: 20px;
+    }
 
-  <div class="project-card" id="medical-kiosk">
-    <h3>Medical Kiosk Prototype (APM Competition)</h3>
-    <p>Led a cross-functional team to design and prototype a smart medical kiosk for underserved communities.</p>
-    <ul>
-      <li><strong>Theme:</strong> Health Tech, R&D</li>
-      <li><strong>Impact:</strong> Finalist in APM innovation challenge</li>
-    </ul>
-  </div>
+    .project-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
 
-  <div class="project-card" id="digital-poverty">
-    <h3>Digital Poverty Research (Redcar & Cleveland)</h3>
-    <p>Audited 146 charity websites for viability, desirability, and security. Delivered actionable recommendations to local government.</p>
-    <ul>
-      <li><strong>Theme:</strong> Civic Tech, Digital Inclusion</li>
-      <li><strong>Impact:</strong> Raised awareness of digital poverty emergency</li>
-    </ul>
-  </div>
+    .project-card h3 {
+      margin-top: 0;
+      color: #333;
+    }
 
-  <div class="project-card" id="civic-impact-app">
-    <h3>Civic Impact Application</h3>
-    <p>Built a platform to track and amplify individual and corporate social responsibility efforts.</p>
-    <ul>
-      <li><strong>Theme:</strong> CSR, Community Engagement</li>
-      <li><strong>Impact:</strong> Enabled transparent CSR reporting</li>
-    </ul>
-  </div>
+    .project-card ul {
+      padding-left: 20px;
+    }
 
-  <div class="project-card" id="ajo-connect">
-    <h3>Ajo Connect</h3>
-    <p>Designed a trust-first platform for community borrowing, integrating accountability and digital verification.</p>
-    <ul>
-      <li><strong>Theme:</strong> Fintech, Community Lending</li>
-      <li><strong>Impact:</strong> Improved repayment transparency</li>
-    </ul>
-  </div>
+    .project-card li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
 
-  <div class="project-card" id="connectroots">
-    <h3>ConnectRoots</h3>
-    <p>Ongoing development of a verification engine for social sellers using QR logic and review flows.</p>
-    <ul>
-      <li><strong>Theme:</strong> KYC, Social Commerce</li>
-      <li><strong>Impact:</strong> Strengthens buyer confidence</li>
-    </ul>
-  </div>
+  <!-- Navigation bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Books</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <div class="project-card" id="national-strategy">
-    <h3>National Digital Strategy for IT Profession (Nigeria)</h3>
-    <p>Spearheaded the development of Nigeria’s national digital strategy for the IT profession, aligning with government priorities in digital transformation and workforce planning.</p>
+  <!-- Sidebar navigation -->
+  <aside id="project-nav">
+    <h3>Jump to a Project</h3>
     <ul>
-      <li><strong>Theme:</strong> Policy Innovation, Workforce Development</li>
-      <li><strong>Impact:</strong> 20,000+ trained participants in 2 years</li>
+      <li><a href="#umuigbo">Umuigbo Project</a></li>
+      <li><a href="#medical-kiosk">Medical Kiosk Prototype</a></li>
+      <li><a href="#digital-poverty">Digital Poverty Research</a></li>
+      <li><a href="#civic-impact-app">Civic Impact App</a></li>
+      <li><a href="#ajo-connect">Ajo Connect</a></li>
+      <li><a href="#connectroots">ConnectRoots</a></li>
+      <li><a href="#national-strategy">National Digital Strategy</a></li>
+      <li><a href="#cheque-process">Cheque Process Optimization</a></li>
+      <li><a href="#hnw-product">High Net Worth Product</a></li>
+      <li><a href="#methodology-digitization">Methodology Digitization</a></li>
+      <li><a href="#staff-training">Bank Staff Training</a></li>
     </ul>
-  </div>
+  </aside>
 
-  <div class="project-card" id="cheque-process">
-    <h3>Cheque Deposit Process Optimization</h3>
-    <p>Improved the bank’s cheque deposit workflow to prevent fraud and enhance operational efficiency.</p>
-    <ul>
-      <li><strong>Theme:</strong> Banking Operations, Risk Management</li>
-      <li><strong>Impact:</strong> Reduced fraud incidents by 60%</li>
-    </ul>
-  </div>
+  <!-- Main project content -->
+  <section id="projects">
+    <h2>Projects & Civic Impact</h2>
 
-  <div class="project-card" id="hnw-product">
-    <h3>High Net Worth Product Development</h3>
-    <p>Helped develop a world-class financial product tailored for high net worth clients, driving exceptional returns and growth.</p>
-    <ul>
-      <li><strong>Theme:</strong> Product Strategy, Wealth Management</li>
-      <li><strong>Impact:</strong> 200% ROI and 90% increase in customer base</li>
-    </ul>
-  </div>
+    <div class="project-card" id="umuigbo">
+      <h3>Umuigbo Project</h3>
+      <p>Digitizing the Igbo Apprenticeship system to preserve indigenous knowledge and scale economic empowerment.</p>
+      <ul>
+        <li><strong>Theme:</strong> Cultural Tech, Skills Transfer</li>
+        <li><strong>Impact:</strong> Increased participation by 25%</li>
+      </ul>
+    </div>
 
-  <div class="project-card" id="methodology-digitization">
-    <h3>Digitized Methodology Selection for IT Projects</h3>
-    <p>Created a digital framework to guide project managers in selecting appropriate methodologies based on project conditions.</p>
-    <ul>
-      <li><strong>Theme:</strong> IT Governance, Project Management</li>
-      <li><strong>Impact:</strong> Improved delivery alignment and reduced project risk</li>
-    </ul>
-  </div>
+    <div class="project-card" id="medical-kiosk">
+      <h3>Medical Kiosk Prototype (APM Competition)</h3>
+      <p>Led a cross-functional team to design and prototype a smart medical kiosk for underserved communities.</p>
+      <ul>
+        <li><strong>Theme:</strong> Health Tech, R&D</li>
+        <li><strong>Impact:</strong> Finalist in APM innovation challenge</li>
+      </ul>
+    </div>
 
-  <div class="project-card" id="staff-training">
-    <h3>Bank Staff Training Initiative</h3>
-    <p>Trained over 200 staff on product knowledge and market penetration strategies to boost performance and customer engagement.</p>
-    <ul>
-      <li><strong>Theme:</strong> Capacity Building, Sales Enablement</li>
-      <li><strong>Impact:</strong> Strengthened frontline execution and market reach</li>
-    </ul>
-  </div>
-</section>
+    <div class="project-card" id="digital-poverty">
+      <h3>Digital Poverty Research (Redcar & Cleveland)</h3>
+      <p>Audited 146 charity websites for viability, desirability, and security. Delivered actionable recommendations to local government.</p>
+      <ul>
+        <li><strong>Theme:</strong> Civic Tech, Digital Inclusion</li>
+        <li><strong>Impact:</strong> Raised awareness of digital poverty emergency</li>
+      </ul>
+    </div>
+
+    <div class="project-card" id="civic-impact-app">
+      <h3>Civic Impact Application</h3>
+      <p>Built a platform to track and amplify individual and corporate social responsibility efforts.</p>
+      <ul>
+        <li><strong>Theme:</strong> CSR, Community Engagement</li>
+        <li><strong>Impact:</strong> Enabled transparent CSR reporting</li>
+      </ul>
+    </div>
+
+    <div class="project-card" id="ajo-connect">
+      <h3>Ajo Connect</h3>
+      <p>Designed a trust-first platform for community borrowing, integrating accountability and digital verification.</p>
+      <ul>
+        <li><strong>Theme:</strong> Fintech, Community Lending</li>
+        <li><strong>Impact:</strong> Improved repayment transparency</li>
+      </ul>
+    </div>
+
+    <div class="project-card" id="connectroots">
+      <h3>ConnectRoots</h3>
+      <p>Ongoing development of a verification engine for social sellers using QR logic and review flows.</p>
+      <ul>
+        <li><strong>Theme:</strong> KYC, Social Commerce</li>
+        <li><strong>Impact:</strong> Strengthens buyer confidence</li>
+      </ul>
+    </div>
+
+    <div class="project-card" id="national-strategy">
+      <h3>National Digital Strategy for IT Profession (Nigeria)</h3>
+      <p>Spearheaded the development of Nigeria’s national digital strategy for the IT profession, aligning with government priorities in digital transformation and workforce planning.</p>
+      <ul>
+        <li><strong>Theme:</strong> Policy Innovation, Workforce Development</li>
+        <li><strong>Impact:</strong> 20,000+ trained participants in 2 years</li>
+      </ul>
+    </div>
+
+    <div class="project-card" id="cheque-process">
+      <h3>Cheque Deposit Process Optimization</h3>
+      <p>Improved the bank’s cheque deposit workflow to prevent fraud and enhance operational efficiency.</p>
+      <ul>
+        <li><strong>Theme:</strong> Banking Operations, Risk Management</li>
+        <li><strong>Impact:</strong> Reduced fraud incidents by 60%</li>
+      </ul>
+    </div>
+
+    <div class="project-card" id="hnw-product">
+      <h3>High Net Worth Product Development</h3>
+      <p>Helped develop a world-class financial product tailored for high net worth clients, driving exceptional returns and growth.</p>
+      <ul>
+        <li><strong>Theme:</strong> Product Strategy, Wealth Management</li>
+        <li><strong>Impact:</strong> 200% ROI and 90% increase in customer base</li>
+      </ul>
+    </div>
+
+    <div class="project-card" id="methodology-digitization">
+      <h3>Digitized Methodology Selection for IT Projects</h3>
+      <p>Created a digital framework to guide project managers in selecting appropriate methodologies based on project conditions.</p>
+      <ul>
+        <li><strong>Theme:</strong> IT Governance, Project Management</li>
+        <li><strong>Impact:</strong> Improved delivery alignment and reduced project risk</li>
+      </ul>
+    </div>
+
+    <div class="project-card" id="staff-training">
+      <h3>Bank Staff Training Initiative</h3>
+      <p>Trained over 200 staff on product knowledge and market penetration strategies to boost performance and customer engagement.</p>
+      <ul>
+        <li><strong>Theme:</strong> Capacity Building, Sales Enablement</li>
+        <li><strong>Impact:</strong> Strengthened frontline execution and market reach</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

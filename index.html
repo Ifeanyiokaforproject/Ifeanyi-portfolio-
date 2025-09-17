@@ -1,74 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Ifeanyi Emmanuel Okafor | Civic Tech Strategist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      scroll-behavior: smooth;
+    }
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- meta tags, title, stylesheets -->
+    nav {
+      background-color: #fff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(to right, #0077cc, #00b4d8);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .bio {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+
+    .bio img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-right: 30px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .bio-text {
+      max-width: 600px;
+    }
+
+    .bio-text h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .buttons a:hover {
+      background-color: #005fa3;
+    }
+
+    .featured-projects {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .featured-projects h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+
+    @media screen and (max-width: 768px) {
+      .bio {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bio img {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Paste navigation here -->
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="publications.html">Books</a>
+    <a href="resume.html">Resume</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Main content starts here -->
-  <section id="welcome">
-    <h1>Welcome to my portfolio</h1>
-    <!-- etc. -->
-  </section>
-
-</body>
-</html>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Ifeanyi Emmanuel Okafor</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <!-- Welcome Header -->
   <header>
-    <h1>My Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="resume.pdf">Resume</a>
-      <a href="mailto:ifyokaemma@gmail.com">Contact</a>
-    </nav>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Mission-driven strategist building civic tech for impact, inclusion, and accountability.</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Amazon Coaching & Process Optimization</h2>
-      <p>Coached 300+ associates, reduced ramp-up time by 30%, mentored 20+ into instructor roles, and improved training capacity by 40%.</p>
-    </section>
+  <!-- Bio Section -->
+  <section class="bio">
+    <img src="your-photo.jpg" alt="Ifeanyi Emmanuel Okafor">
+    <div class="bio-text">
+      <h2>About Me</h2>
+      <p>I’m a multidisciplinary strategist, data analyst, and civic tech founder. I lead national-scale digital initiatives, empower communities through technology, and design platforms that drive transparency and trust. My work spans digital inclusion, product innovation, and workforce development.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>VerifyPro — Trust Platform for Social Commerce</h2>
-      <p>Designed a consent-driven KYC engine with QR logic and review flows to verify sellers and build buyer confidence.</p>
-    </section>
+  <!-- Call-to-Action Buttons -->
+  <div class="buttons">
+    <a href="projects.html">View Projects</a>
+    <a href="resume.html">Download Resume</a>
+    <a href="contact.html">Contact Me</a>
+  </div>
 
-    <section>
-      <h2>Tiege Consult — Strategic Project Delivery</h2>
-      <p>Delivered 5 projects (£20K–£100K) with 100% on-time delivery, reduced risk exposure by 35%, and led stakeholder workshops with 30+ participants.</p>
-    </section>
+  <!-- Featured Projects -->
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
 
-    <section>
-      <h2>RCVDA — Data Accuracy & Automation</h2>
-      <p>Improved data accuracy by 75%, automated reporting workflows (60% reduction in manual effort), and delivered dashboards tracking 20+ KPIs.</p>
-    </section>
+    <div class="project-card">
+      <h3>National Digital Strategy for IT Profession</h3>
+      <p>Led the development of Nigeria’s national digital strategy, enabling 20,000+ trained participants and informing government planning.</p>
+    </div>
 
-    <section>
-      <h2>Sandify- Igbo Apprenticeship Automation</h2>
-      <p>Founded Umuigbo, a cultural igbo skills acquisition platform for advancement of cultural system and economic development and increasing skills acquisition by 25%. </p>
-    </section>
-  </main>
+    <div class="project-card">
+      <h3>Umuigbo Project</h3>
+      <p>Digitizing the Igbo Apprenticeship system to preserve indigenous knowledge and scale economic empowerment.</p>
+    </div>
 
+    <div class="project-card">
+      <h3>ConnectRoots</h3>
+      <p>Developing a verification engine for social sellers using QR logic and review flows to build trust in digital commerce.</p>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="projects.html">Explore All Projects →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Ifeanyi Emmanuel Okafor</p>
+    &copy; 2025 Ifeanyi Emmanuel Okafor. All rights reserved.
   </footer>
+
 </body>
 </html>

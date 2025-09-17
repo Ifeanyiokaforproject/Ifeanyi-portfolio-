@@ -46,4 +46,22 @@ footer {
   text-align: center;
   padding: 10px;
 }
+@media screen and (max-width: 768px) {
+  #project-nav {
+    position: static;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
 
+  #projects {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
